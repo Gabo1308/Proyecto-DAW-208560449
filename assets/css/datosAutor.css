@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 248, 248);
+}
+
+.header-autor {
+  background: #FEC3E1;
+  border-radius: 25px;
+  position: relative; 
+}
+
+.estrella1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #b6b5b5;
+  font-size: 28px;
+}
+
+.estrella2 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #b6b5b5;
+  font-size: 28px;
+}
+
+.header-autor  h1,
+.header-autor  h4{
+  color: grey;
+}
+
+
+.nav-autor {
+  background: #FEC3E1;
+  border-radius: 25px;
+}
+
+.nav-autor .bi-cake{
+  color: grey;
+  font-size: 20px;
+}
+
+.nav-autor .nav-item .nav-link {
+  color: grey;
+}
+
+main .datos-autor {
+  background: #FEC3E1;
+  border-radius: 25px;
+  color: grey;
+}
+
+main .datos-autor img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+footer .footer-autor {
+  color: grey;
+  background: #FEC3E1;
+  border-radius: 25px;
+}
+
+
+footer {
+  color: #d17a98;
+  border: 3px solid #d17a98;
+}
+
+
+footer .lista-footer li a {
+  color: #d17a98;;
+}
+
+@media (min-width: 768px){
+  .estrella1,
+  .estrella2{
+    font-size: 28px;
+  }
+
+  .bi-cake{
+    font-size: 28px;
+  }
+
+  main .datos-autor img {
+    width: 500px;
+    height: 500px;
+  }
+
+}
+
