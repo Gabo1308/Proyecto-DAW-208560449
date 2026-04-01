@@ -66,4 +66,14 @@ footer .lista-footer li a {
     font-size: 28px;
   }
 
+  .nav-home{
+    width: 90%;
+    margin: 20px auto;
+    font-size: 19px;
+  }
+
+  .header-home{
+    width: 90%;
+    margin-top: 20px;
+  }
 }

@@ -78,12 +78,22 @@ footer .lista-footer li a {
 @media (min-width: 768px){
 
   .estrella1,
-  .estrella2{
+  .estrella2 {
     font-size: 28px;
   }
 
-  .nav-negocio .bi-cake{
+  .nav-negocio .bi-cake {
     font-size: 28px;
   }
+  
+  .nav-negocio {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 19px;
+  }
 
+  .header-negocio {
+    width: 90%;
+    margin-top: 20px;
+  }
 }
