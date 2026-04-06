@@ -44,6 +44,7 @@ body {
 
 .nav-galeria .nav-item .nav-link {
   color: grey;
+  margin-left: 8px;
 }
 
 main .productos-galeria {

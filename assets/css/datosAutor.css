@@ -48,6 +48,7 @@ body {
 
 .nav-autor .nav-item .nav-link {
   color: grey;
+  margin-left: 8px;
 }
 
 main .datos-autor {

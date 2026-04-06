@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(250, 248, 248);
+  background-color: rgb(250, 248, 248);
 }
 
 .header-home {
@@ -43,6 +43,84 @@ body {
 
 .nav-contenedor .nav-home .nav-item .nav-link {
   color: grey;
+  margin-left: 8px;
+}
+
+.contenido-negocio {
+  background-color: #FEC3E1;
+  margin: 20px auto;
+  max-width: 1200px; 
+  padding: 20px;
+}
+
+.section-caroucel {
+  padding: 20px 10px;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: #FEC3E1;
+}
+
+.section-caroucel .carousel-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-caroucel .carousel-content #demo {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.section-caroucel .carousel-content #demo .carousel-inner .carousel-caption h3{
+  color: #f178d7;
+  font-size: 50px;
+  text-align: center;
+  transform: translate(-5%, -450%);
+}
+
+.section-caroucel .carousel-content #demo .carousel-inner img {
+  width: 100%;
+  height: 400px;
+}
+
+.section-caroucel .carousel-content #demo .carousel-control-prev 
+.carousel-control-prev-icon {
+  background-color: #f178d7;
+  border-radius: 25px;
+}
+
+.section-caroucel .carousel-content #demo .carousel-control-next 
+.carousel-control-next-icon {
+  background-color: #f178d7;
+  border-radius: 25px;
+}
+
+main .contenido-negocio .descripcion-negocio {
+  background-color: #F5F5F5;
+  padding: 5px;
+  color: #d17a98;
+  border-radius: 25px;
+}
+
+main .contenido-negocio .descripcion-negocio h3{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+main .contenido-negocio .descripcion-negocio p{
+  font-size: 15px;
+  text-align: justify;
+}
+
+main #mapa {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+main #btnUbicacion {
+  color: #d17a98;
 }
 
 footer {
@@ -75,5 +153,21 @@ footer .lista-footer li a {
   .header-home{
     width: 90%;
     margin-top: 20px;
+  }
+
+   main #mapa {
+    width: 100%;
+    height: 500px;
+  }
+
+  .section-caroucel .carousel-content .carousel-inner .carousel-item img {
+    height: 700px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .section-caroucel .carousel-content .carousel-inner .carousel-item 
+  .carousel-caption {
+    transform: translate(5%, -10%);
   }
 }
