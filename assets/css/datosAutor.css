@@ -39,6 +39,7 @@ body {
 .nav-autor {
   background: #FEC3E1;
   border-radius: 25px;
+  margin-right: 20px;
 }
 
 .nav-autor .bi-cake{

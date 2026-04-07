@@ -34,6 +34,7 @@ body {
 .nav-galeria {
   background: #FEC3E1;
   border-radius: 25px;
+  margin-right: 20px;
 }
 
 .nav-galeria .bi-cake{
@@ -51,6 +52,10 @@ main .productos-galeria {
  background-color: #FEC3E1;
  border-radius: 25px;
  margin: 25px;
+}
+main .productos-galeria .encabezado-productos 
+.contenido-productos {
+  padding: 15px;
 }
 
 main .productos-galeria .encabezado-productos 

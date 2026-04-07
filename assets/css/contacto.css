@@ -34,6 +34,7 @@ body {
 .nav-contacto {
   background: #FEC3E1;
   border-radius: 25px;
+  margin-right: 20px;
 }
 
 .nav-contenedor .nav-contacto .bi-cake{
