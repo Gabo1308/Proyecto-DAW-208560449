@@ -1,0 +1,37 @@
+let fotosPerfilURL = "https://raw.githubusercontent.com/Gabo1308/imgsProyecto/main/fotosPerfil.json";
+
+$(document).ready(function () {
+    cargarRedes();
+});
+
+function cargarRedes() {
+    $.ajax({
+        url: fotosPerfilURL,
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            mostrarRedes(data);
+        }
+    });
+}
+
+function mostrarRedes(datos) {
+    let contenedor = document.getElementById("contenedor-redes");
+    let codigo = "";
+
+    codigo += `<p class="text-center titulo-redes">${datos.titulo}</p>`;
+
+    datos.FotosPerfil.forEach(function(redSoc) {
+        codigo += `
+            <div class="col-12 col-md-4 card-redes text-center">
+                <i class="bi ${redSoc.icono} icono-insta"></i><br>
+                <a href="${redSoc.link}" target="_blank">
+                    <img src="${redSoc.imagen}" class="img-fluid" alt="imagen red"><br>
+                </a>
+                <a href="${redSoc.link}" target="_blank">${redSoc.usuario}</a>
+            </div>
+        `;
+    });
+
+    contenedor.innerHTML = codigo;
+}

@@ -1,0 +1,25 @@
+{   
+    "titulo": "Redes Sociales",
+    "FotosPerfil": [
+        {
+            "icono": "bi-instagram",
+            "link": "https://www.instagram.com/moon_ie26/",
+            "imagen": "assets/img/redesSociales/imgInsta.jpg",
+            "usuario": "moon_ie26"
+        },
+
+        {
+            "icono": "bi-twitter-x",
+            "link": "https://x.com/ami97051793",
+            "imagen": "assets/img/redesSociales/imgTwitter.jpg",
+            "usuario": "@ami97051793"
+        },
+
+        {
+            "icono": "bi-facebook",
+            "link": "https://www.facebook.com/profile.php?id=100046433016745",
+            "imagen": "assets/img/redesSociales/imgFacebook.jpg",
+            "usuario": "Amanda Gómez"
+        }
+    ]
+}

@@ -71,7 +71,12 @@ main .productos-galeria .encabezado-productos
 
 main .productos-galeria .encabezado-productos 
 .contenido-productos .fila .card-productos img {
-    margin-top: 15px;
+  margin-top: 15px;
+  margin-left: 14px;
+  width: 90%;
+  height: 250px;
+  object-fit: contain;
+  display: block;
 }
 
 main .productos-galeria .encabezado-productos 
@@ -127,15 +132,16 @@ footer .lista-footer li a {
       margin-top: 20px;
     }
 
-    main .productos-galeria .encabezado-productos 
-    .contenido-productos .fila .card-productos {
+    .card-productos {
       max-width: 350px;
       margin: 0 auto;
       margin-top: 25px;
       margin-bottom: 25px;
     }
+
     .card-productos img {
       height: 300px;
+      width: 90%;
     }
 
     .info-producto h3 {

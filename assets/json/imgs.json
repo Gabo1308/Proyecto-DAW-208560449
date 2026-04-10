@@ -1,0 +1,48 @@
+{
+    "reposteria": [
+        {
+            "imagen": "assets/img/reposteria/corazon-redVelvet-Fresas.png",
+            "nombre": "Pastel de fresas y red velvet en forma de corazón",
+            "precio": 18000,
+            "alt": "Pastel redVelvet1"
+        },
+
+        {
+            "imagen": "assets/img/reposteria/pastel-de-enamorados.png",
+            "nombre": "Pastel de vainilla en forma de corazón",
+            "precio": 18000,
+            "alt": "Pastel de enamorados"
+        },
+
+        {
+            "imagen": "assets/img/reposteria/Empanadas-dulces-mixtas.png",
+            "nombre": "10 empanadas sabor chiverre, piña y fresa",
+            "precio": 13000,
+            "alt": "Empanadas"
+
+    
+        },
+
+        {
+            "imagen": "assets/img/reposteria/rollos-de-canela.png",
+            "nombre": "15 deliciosos rollos de canela",
+            "precio": 20000,
+            "alt": "Rollos de canela"
+
+        },
+
+        {
+            "imagen": "assets/img/reposteria/pastel-zanahoria.png",
+            "nombre": "Pastel de zanahoria",
+            "precio": 24000,
+            "alt": "Pastel de zanahoria"
+        },
+
+        {
+            "imagen": "assets/img/reposteria/redVelvet-con-chocolates.png",
+            "nombre": "Pastel red velvet grande con trozos de chocolate",
+            "precio": 25000,
+            "alt": "Red velvet con chocolates"
+        }
+    ]
+}

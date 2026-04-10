@@ -6,23 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto-208560449-home</title>
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/Acerca-De.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRJagwF57KrKCQzLzXAgVEE6AIOpdvNqA&callback=inicializarMapa&libraries=geometry">
-    </script>
 </head>
-
 <body>
     <header class="pb-sm-2 container-fluid header-home">
         <i class="bi bi-stars estrella1"></i>
         <h1 class="text-center">Primavera's Cakes</h1>
         <h4 class="text-center">Todo en Postres<br>
-                                Página Principal</h4>
+                                Acerca de</h4>
         <i class="bi bi-star estrella2"></i>
     </header>
 
-    
     <div class="container-fluid px-0 nav-contenedor m-2">
         <nav class="navbar navbar-expand-lg navbar-light my-4 nav-home">
             <a class="mx-3  bi bi-cake" href="index.html"></a>
@@ -52,58 +48,33 @@
         </nav>
     </div>
 
-     <section class="section-caroucel">
-        <div class="carousel-content">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="assets/img/reposteria/redVelvet-con-chocolates.png" class="img-fluid" alt="Imageen1">
-                        <div class="carousel-caption">
-                            <h3>Bienvenido</h3>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="assets/img/reposteria/pastel-zanahoria.png" class="img-fluid" alt="Imagen2">
-                        <div class="carousel-caption">
-                            <h3>Bienvenido</h3>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-
-                
-        </div>
-    </section>
-
-
     <main>
-        <div class="contenedor-mapa">
-            <div class="container my-4">
-                <h3>Nos ubicamos aqui</h3>
-                <div class="row">
-                    <div class="col-md-12 text-center mb-2">
-                        <button id="btnUbicacion" class="btn btn-light">
-                            ¿Cómo puedo llegar?
-                        </button>
-                        <p id="mensajeError" class="text-danger mt-2"></p>
-                    </div>
-                    <div class="col-md-12">
-                        <div id="mapa"></div>
-                    </div>
-                    <div class="col-md-12 p-3 text-center  accordion-header  text-white-50 bg-dark  distanciaInfo">
-                        <p id="distanciaInfo"></p>
-                        <p id="rutaInfo"></p>
-                        <p id="tiempoInfo"></p>
-                    </div>
-                </div>
+        <div class="contenido-negocio container">
+            <div class="descripcion-negocio">
+                <h3>Sobre el negocio</h3>
+
+                <p> La idea de este negocio no nació de un momento específico, sino de algo que 
+                    ha estado conmigo desde siempre. Desde pequeña me ha gustado mucho la 
+                    pastelería y la cocina, pero no solo por hacer comida, sino por lo que 
+                    significa: crear, compartir y hacer felices a otras personas con algo hecho 
+                    con mis propias manos.</p>
+                
+                <p> Uno de los recuerdos más bonitos que tengo es hacer pasteles con mi abuelita.
+                    No eran solo recetas, eran momentos. Entre risas, errores y olores dulces en
+                    la cocina, fui descubriendo lo mucho que me llenaba todo eso. Creo que ahí 
+                    fue cuando, sin darme cuenta, empezó a formarse este sueño.</p>
+                
+                <p> Con el tiempo, esa ilusión fue tomando forma, y comencé a imaginarme teniendo 
+                    mi propio café o pastelería. Un lugar acogedor, donde cada detalle tenga 
+                    intención, donde las personas no solo vayan a comer, sino a sentirse bien, 
+                    como yo me sentía en esos momentos con mi abuela.</p>
+
+                <p>Hoy en día, tal vez aún no estoy completamente ahí, pero siento que este 
+                    proyecto es un paso importante. Es una oportunidad para acercarme a ese 
+                    sueño, para aprender, crecer y seguir construyendo algo que nace desde lo 
+                    más sincero de mí.</p>
             </div>
-        </div>
+        </div>   
     </main>
 
     <footer class="footer-home py-5">
@@ -139,7 +110,4 @@
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/APIsScrips.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
