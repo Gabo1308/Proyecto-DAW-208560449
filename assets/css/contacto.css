@@ -31,18 +31,18 @@ body {
   font-size: 20px;
 }
 
-.nav-contacto {
+.section-nav .nav-contenedor .nav-contacto {
   background: #FEC3E1;
   border-radius: 25px;
   margin-right: 20px;
 }
 
-.nav-contenedor .nav-contacto .bi-cake{
+.section-nav .nav-contenedor .nav-contenedor .nav-contacto .bi-cake{
   color: grey;
   font-size: 20px;
 }
 
-.nav-contenedor .nav-contacto .nav-item .nav-link {
+.section-nav .nav-contenedor .nav-contenedor .nav-contacto .nav-links .nav-link {
   color: grey;
   margin-left: 8px;
 }
@@ -107,65 +107,78 @@ main .contenedor-redes .encabezado-redes
     margin-bottom: 15px;
 }
 
-
-footer {
+.footer-contacto {
   color: #d17a98;
   border: 3px solid #d17a98;
+  padding: 25px 15px;
 }
 
+.footer-contacto .contenido-footer {
+  display: grid;
+  gap: 25px;
+  text-align: center;
+}
 
-footer .lista-footer li a {
+.footer-contacto .footer-datos {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-contacto .footer-datos h3 {
+  margin-bottom: 10px;
+}
+
+.footer-contacto .footer-datos a {
   color: #d17a98;
 }
 
-
+.footer-contacto .footer-datos i {
+  margin-right: 5px;
+}
 
 @media (min-width: 768px){
 
   .estrella1,
-  .estrella2{
+  .estrella2 {
     font-size: 28px;
   }
 
-  .nav-negocio .bi-cake{
+  .section-nav .nav-contenedor .nav-contacto .bi-cake {
     font-size: 28px;
   }
 
-  .nav-contacto{
+  .section-nav .nav-contenedor .nav-contacto {
     width: 90%;
     margin: 20px auto;
     font-size: 19px;
   }
 
-  .header-contacto{
+  .header-contacto {
     width: 90%;
     margin-top: 20px;
   }
 
   main .contenedor-redes .encabezado-redes
-  .contenido-redes .fila-redes{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  main .contenedor-redes .encabezado-redes
-  .contenido-redes .fila-redes .titulo-redes{
+  .contenido-redes .fila-redes .titulo-redes {
     width: 100%;
     margin-bottom: 10px;
   }
 
   main .contenedor-redes .encabezado-redes
-  .contenido-redes .fila-redes .card-redes{
-    flex: 30%;
-    max-width: 32%;
-    padding: 10px;
-    margin-bottom: 45px;
+  .contenido-redes .fila-redes .card-redes {
+    max-width: 350px;
+    margin: 25px auto;
   }
 
   main .contenedor-redes .encabezado-redes
   .contenido-redes .card-redes img {
     width: 120px;
     height: 120px;
+  }
+
+  .footer-contacto .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
   }
 }

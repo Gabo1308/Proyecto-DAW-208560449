@@ -1,4 +1,4 @@
-let imgsURL ="https://raw.githubusercontent.com/Gabo1308/imgsProyecto/main/imgs.json"
+let imgsURL ="https://Gabo1308.github.io/Proyecto-DAW-208560449/assets/json/imgs.json"
 
 $(document).ready(function () {
     cargarProductos();

@@ -36,18 +36,18 @@ body {
 }
 
 
-.nav-autor {
+.section-nav .nav-contenedor .nav-autor {
   background: #FEC3E1;
   border-radius: 25px;
   margin-right: 20px;
 }
 
-.nav-autor .bi-cake{
+.section-nav .nav-contenedor .nav-autor .bi-cake{
   color: grey;
   font-size: 20px;
 }
 
-.nav-autor .nav-item .nav-link {
+.section-nav .nav-contenedor .nav-autor .nav-links .nav-link {
   color: grey;
   margin-left: 8px;
 }
@@ -56,6 +56,7 @@ main .datos-autor {
   background: #FEC3E1;
   border-radius: 25px;
   color: grey;
+  margin-bottom: 25px;
 }
 
 main .datos-autor img {
@@ -64,21 +65,33 @@ main .datos-autor img {
   border-radius: 25px;
 }
 
-footer .footer-autor {
-  color: grey;
-  background: #FEC3E1;
-  border-radius: 25px;
-}
-
-
-footer {
+.footer-autor {
   color: #d17a98;
   border: 3px solid #d17a98;
+  padding: 25px 15px;
 }
 
+.footer-autor .contenido-footer {
+  display: grid;
+  gap: 25px;
+  text-align: center;
+}
 
-footer .lista-footer li a {
-  color: #d17a98;;
+.footer-autor .footer-datos {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-autor .footer-datos h3 {
+  margin-bottom: 10px;
+}
+
+.footer-autor .footer-datos a {
+  color: #d17a98;
+}
+
+.footer-autor .footer-datos i {
+  margin-right: 5px;
 }
 
 @media (min-width: 768px){
@@ -96,7 +109,11 @@ footer .lista-footer li a {
     height: 500px;
   }
 
-  .nav-autor {
+  .section-nav .nav-contenedor .nav-autor .bi-cake {
+    font-size: 28px;
+  }
+
+  .section-nav .nav-contenedor .nav-autor {
     width: 90%;
     margin: 20px auto;
     font-size: 19px;
@@ -105,6 +122,12 @@ footer .lista-footer li a {
   .header-autor {
     width: 90%;
     margin-top: 20px;
+  }
+
+  .footer-autor .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
   }
 }
 

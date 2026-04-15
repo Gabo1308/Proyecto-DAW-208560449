@@ -22,35 +22,26 @@
         <i class="bi bi-star estrella2"></i>
     </header>
 
-    
-    <div class="container-fluid px-0 nav-contenedor m-2">
-        <nav class="navbar navbar-expand-lg navbar-light my-4 nav-home">
-            <a class="mx-3  bi bi-cake" href="index.html"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <section class="section-nav">
+        <div class="container-fluid nav-contenedor">
+            <nav class="navbar navbar-expand-lg navbar-light nav-home">
+                <a class="mx-3 bi bi-cake" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <div class="navbar-nav nav-links">
+                        <a class="nav-link" href="index.html">Inicio</a>
                         <a class="nav-link" href="galeria.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="contacto.html">Información de contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="datosAutor.html">Sobre el Estudiante</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="Acerca-De.html">Acerca de</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                        <a class="nav-link" href="datosAutor.html">Sobre el Estudiante</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
 
      <section class="section-caroucel">
         <div class="carousel-content">
@@ -76,13 +67,74 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-
-                
         </div>
     </section>
 
-
     <main>
+        <section class="sobreNosotros-section">
+            <div class="sobreNosotros-contenedor container">
+                <h2>Sobre de Nosostros</h2>
+                <div class="sobreNosotros-contenido">
+                    <img src="assets/img/extras/utensilios.png" alt="utensilios" class="sobreNosotros-img img-fluid">
+                    <div class="sobreNosotros-contenido-texto">
+                        <p>En Primavera's Cakes ofrecemos un servicio de repostería en el que nos 
+                            comprometemos con la excelencia en cada uno de nuestros productos. 
+                            Nos enfocamos en brindar una experiencia única a nuestros clientes, 
+                            garantizando los siguientes valores:</p>
+                        <div class="sobreNosotros-descripcion">
+                            <p><b>Compromiso:</b> Nos esforzamos por cumplir con los más altos estándares en cada pedido, 
+                                asegurando puntualidad, responsabilidad y dedicación en todo el proceso de elaboración.
+                            </p>
+
+                            <p><b>Profesionalismo:</b> Trabajamos con seriedad, organización y atención al detalle, 
+                                brindando un servicio confiable que cumple con las expectativas de nuestros clientes.
+                            </p>
+
+                            <p> <b>Creatividad:</b> Diseñamos productos únicos y personalizados, adaptándonos a cada ocasión 
+                                para ofrecer presentaciones innovadoras que destaquen tanto en sabor como en apariencia.
+                            </p>
+
+                            <p><b>Atención al cliente:</b> Ofrecemos un trato cercano y personalizado, 
+                                escuchando las necesidades de cada cliente para brindar soluciones adecuadas y satisfactorias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="servicios-section">
+            <div class="servicios-contenedor container">
+                <h2>Sobre de Nuestros Postres</h2>
+                <p class="servicios-descripcion"> Nuestros postres son elaborados cuidadosamente para adaptarse a 
+                        cada ocasión, combinando sabores tradicionales con diseños personalizados. Nos enfocamos en 
+                        crear productos que destaquen por su presentación y que acompañen momentos 
+                        especiales con un toque único y memorable.</p>
+                <div class="servicios-contenido">
+                    <p class="servicios-ventajas">
+                        <i class="bi bi-clock servicios-icono"></i>
+                        <b>Entrega Puntual</b>
+                        Cumplimos con los tiempos establecidos para que tus pedidos lleguen 
+                        justo cuando los necesitas.
+                    </p>
+
+                    <p class="servicios-ventajas">
+                        <i class="bi bi-cash-coin servicios-icono"></i>
+                        <b>Precios Accesibles</b>
+                        Ofrecemos productos a precios justos, 
+                        adaptados a diferentes presupuestos.
+                    </p>
+                    
+                    <p class="servicios-ventajas">
+                        <i class="bi bi-box-seam servicios-icono"></i>
+                        <b>Pedidos Personalizados</b>
+                        Elaboramos postres a tu medida, ajustándonos a tus gustos 
+                        y necesidades para cada ocasión.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <div class="contenedor-mapa">
             <div class="container my-4">
                 <h3>Nos ubicamos aqui</h3>
@@ -96,7 +148,7 @@
                     <div class="col-md-12">
                         <div id="mapa"></div>
                     </div>
-                    <div class="col-md-12 p-3 text-center  accordion-header  text-white-50 bg-dark  distanciaInfo">
+                    <div class="col-md-12 p-3 text-center accordion-header text-white-50 bg-dark distanciaInfo">
                         <p id="distanciaInfo"></p>
                         <p id="rutaInfo"></p>
                         <p id="tiempoInfo"></p>
@@ -106,40 +158,34 @@
         </div>
     </main>
 
-    <footer class="footer-home py-5">
+    <footer class="footer-home">
         <div class="encabezado-footer">
-            <div class="contenido-footer container">
-                <div class=" row g-3">
-                     <div class="footer-column col-md-4 text-center">
-                        <h3>Redes Sociales</h3>
-                        <ul class="lista-footer list-unstyled">
-                            <li><a href="https://www.instagram.com/moon_ie26/"> <i class="bi bi-instagram"> moon_ie26 </i></a></li>
-                            <li><a href="https://x.com/ami97051793"> <i class="bi bi-twitter"> @ami97051793 </i></a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100046433016745&locale=es_LA"> <i class="bi bi-facebook"> Amanda Gómez </i></a></li>
-                            <li><a href="https://wa.me/50684499445"><i class="bi bi-whatsapp"></i> Amanda Gómez Chaves</a></li>
-                        </ul>
-                     </div>
-                     <div class="footer-column col-md-4 text-center">
-                        <h3>Contactenos</h3>
-                        <p>Dirección: Salon Comunal Urb. Monte Rosa</p>
-                        <p>Correo Electrónico: amandagchak@gmail.com</p>
-                        <p>Teléfono: 84499445</p>
-                     </div>
-                     <div class="footer-column col-md-4 text-center">
-                        <h3>Contenido Relevante</h3>
-                        <ul class="lista-footer list-unstyled">
-                            <li><a class="footer-link" href="index.html">Inicio</a></li>
-                            <li><a class="footer-link" href="galeria.html">Productos</a></li>
-                            <li><a class="footer-link" href="datosAutor.html">Sobre el Autor</a></li>
-                            <li><a class="footer-link" href="contacto.html">Información de Contacto</a></li>
-                            <li><a class="footer-link" href="Acerca-De.html">Acerca de</a></li>
-                        </ul>
-                     </div>
+            <div class="contenido-footer">
+                <div class="footer-datos">
+                    <h3>Redes Sociales</h3>
+                    <a href="https://www.instagram.com/moon_ie26/"> <i class="bi bi-instagram"> moon_ie26 </i></a>
+                    <a href="https://x.com/ami97051793"> <i class="bi bi-twitter"> @ami97051793 </i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100046433016745&locale=es_LA"> <i class="bi bi-facebook"> Amanda Gómez </i></a>
+                    <a href="https://wa.me/50684499445"><i class="bi bi-whatsapp"></i> Amanda Gómez Chaves</a>
+                </div>
+                <div class="footer-datos">
+                    <h3>Contactenos</h3>
+                    <p>Dirección: Salon Comunal Urb. Monte Rosa</p>
+                    <p>Correo Electrónico: <a href="mailto:amandagchak@gmail.com">amandagchak@gmail.com</a></p>
+                    <p>Teléfono: 84499445</p>
+                </div>
+                <div class="footer-datos">
+                    <h3>Contenido Relevante</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="galeria.html">Productos</a>
+                    <a href="datosAutor.html">Sobre el Autor</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="Acerca-De.html">Acerca de</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="assets/js/APIsScrips.js"></script>
+    <script src="assets/js/APIMapa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>

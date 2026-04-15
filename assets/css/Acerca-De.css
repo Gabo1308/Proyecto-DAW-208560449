@@ -8,7 +8,7 @@ body {
   background-color: rgb(250, 248, 248);
 }
 
-.header-home {
+.header-acerca {
   background: #FEC3E1;
   border-radius: 25px;
   color: grey;
@@ -31,18 +31,18 @@ body {
   font-size: 20px;
 }
 
-.nav-home {
+.section-nav .nav-contenedor .nav-acerca {
   background: #FEC3E1;
   border-radius: 25px;
   margin-right: 20px;
 }
 
-.nav-contenedor .nav-home .bi-cake{
+.section-nav .nav-contenedor .nav-acerca .bi-cake {
   color: grey;
   font-size: 20px;
 }
 
-.nav-contenedor .nav-home .nav-item .nav-link {
+.section-nav .nav-contenedor .nav-acerca .nav-links .nav-link {
   color: grey;
   margin-left: 8px;
 }
@@ -51,35 +51,56 @@ main .contenido-negocio {
   background-color: #FEC3E1;
   padding: 50px;
   border-radius: 50px;
+  margin-bottom: 25px;
 }
 
 main .contenido-negocio .descripcion-negocio {
   background-color: #F5F5F5;
-  padding: 5px;
   color: #d17a98;
   border-radius: 25px;
+  padding: 5px;
 }
 
 main .contenido-negocio .descripcion-negocio h3{
-  font-size: 18px;
   text-align: center;
+  font-size: 18px;
   margin-top: 15px;
 }
 
 main .contenido-negocio .descripcion-negocio p{
-  font-size: 15px;
   text-align: justify;
+  font-size: 15px;
 }
 
-footer {
+.footer-acerca {
   color: #d17a98;
   border: 3px solid #d17a98;
+  padding: 25px 15px;
 }
 
+.footer-acerca .contenido-footer {
+  display: grid;
+  text-align: center;
+  gap: 25px;
+}
 
-footer .lista-footer li a {
+.footer-acerca .footer-datos {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-acerca .footer-datos h3 {
+  margin-bottom: 10px;
+}
+
+.footer-acerca .footer-datos a {
   color: #d17a98;
 }
+
+.footer-acerca .footer-datos i {
+  margin-right: 5px;
+}
+
 
 @media (min-width: 768px){
 
@@ -88,17 +109,17 @@ footer .lista-footer li a {
     font-size: 28px;
   }
 
-  .nav-negocio .bi-cake{
+  .section-nav .nav-contenedor .nav-acerca .bi-cake{
     font-size: 28px;
   }
 
-  .nav-home{
+  .section-nav .nav-contenedor .nav-acerca {
     width: 90%;
     margin: 20px auto;
     font-size: 19px;
   }
 
-  .header-home{
+  .header-acerca{
     width: 90%;
     margin-top: 20px;
   }
@@ -110,5 +131,11 @@ footer .lista-footer li a {
   main .contenido-negocio .descripcion-negocio p{
     font-size: 20px;
     text-align: justify;
+  }
+
+  .footer-acerca .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
   }
 }

@@ -1,4 +1,4 @@
-let fotosPerfilURL = "https://raw.githubusercontent.com/Gabo1308/imgsProyecto/main/fotosPerfil.json";
+let fotosPerfilURL = "https://Gabo1308.github.io/Proyecto-DAW-208560449/assets/json/fotosPerfil.json";
 
 $(document).ready(function () {
     cargarRedes();

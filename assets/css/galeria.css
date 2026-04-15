@@ -31,19 +31,18 @@ body {
   font-size: 28px;
 }
 
-.nav-galeria {
+.section-nav .nav-contenedor .nav-galeria {
   background: #FEC3E1;
   border-radius: 25px;
   margin-right: 20px;
 }
 
-.nav-galeria .bi-cake{
+.section-nav .nav-contenedor .nav-galeria .bi-cake{
   color: grey;
   font-size: 20px;
 }
 
-
-.nav-galeria .nav-item .nav-link {
+.nav-galeria .nav-links .nav-link {
   color: grey;
   margin-left: 8px;
 }
@@ -53,6 +52,7 @@ main .productos-galeria {
  border-radius: 25px;
  margin: 25px;
 }
+
 main .productos-galeria .encabezado-productos 
 .contenido-productos {
   padding: 15px;
@@ -100,14 +100,33 @@ main .productos-galeria .encabezado-productos
     font-weight: bold;
 }
 
-footer {
+.footer-galeria {
   color: #d17a98;
   border: 3px solid #d17a98;
+  padding: 25px 15px;
 }
 
+.footer-galeria .contenido-footer {
+  display: grid;
+  gap: 25px;
+  text-align: center;
+}
 
-footer .lista-footer li a {
-  color: #d17a98;;
+.footer-galeria .footer-datos {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-galeria .footer-datos h3 {
+  margin-bottom: 10px;
+}
+
+.footer-galeria .footer-datos a {
+  color: #d17a98;
+}
+
+.footer-galeria .footer-datos i {
+  margin-right: 5px;
 }
 
 @media (min-width: 768px){
@@ -121,30 +140,35 @@ footer .lista-footer li a {
     font-size: 28px;
   }
 
-  .nav-contenedor .nav-galeria {
-      width: 90%;
-      margin: 20px auto;
-      font-size: 19px;
-    }
+  .section-nav .nav-contenedor .nav-galeria {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 19px;
+  }
 
-    .header-galeria{
-      width: 90%;
-      margin-top: 20px;
-    }
+  .header-galeria{
+    width: 90%;
+    margin-top: 20px;
+  }
 
-    .card-productos {
-      max-width: 350px;
-      margin: 0 auto;
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
+  .card-productos {
+    max-width: 350px;
+    margin: 25px auto;
+    
+  }
 
-    .card-productos img {
-      height: 300px;
-      width: 90%;
-    }
+  .card-productos img {
+    height: 300px;
+    width: 90%;
+  }
 
-    .info-producto h3 {
-      font-size: 22px;
-    }
+  .info-producto h3 {
+    font-size: 22px;
+  }
+
+  .footer-galeria .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
+  }
 }
