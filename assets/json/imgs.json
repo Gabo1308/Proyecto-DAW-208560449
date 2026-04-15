@@ -40,7 +40,7 @@
 
         {
             "imagen": "assets/img/reposteria/redVelvet-con-chocolates.png",
-            "nombre": "Pastel red velvet grande con trozos de chocolate",
+            "nombre": "Pastel red velvet grande",
             "precio": 25000,
             "alt": "Red velvet con chocolates"
         }

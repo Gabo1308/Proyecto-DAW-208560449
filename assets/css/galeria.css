@@ -151,19 +151,21 @@ main .productos-galeria .encabezado-productos
     margin-top: 20px;
   }
 
-  .card-productos {
+  main .productos-galeria .encabezado-productos 
+  .contenido-productos .fila .card-productos {
     max-width: 350px;
     margin: 25px auto;
-    
   }
 
-  .card-productos img {
+  main .productos-galeria .encabezado-productos 
+  .contenido-productos .fila .card-productos img {
     height: 300px;
     width: 90%;
   }
 
-  .info-producto h3 {
-    font-size: 22px;
+  main .productos-galeria .encabezado-productos 
+  .contenido-productos .fila .card-productos .info-producto h3 {
+    font-size: 22px !important;
   }
 
   .footer-galeria .contenido-footer {

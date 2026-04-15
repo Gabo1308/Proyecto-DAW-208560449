@@ -39,8 +39,38 @@ function mostrarProductos(datos) {
     });
 
     contenedor.innerHTML = cards;
+    HoverCards();
 }
 
 function onError(jqXHR, textStatus, errorThrown) {
     alert("Error al cargar los productos: " + errorThrown);
+}
+
+$(".nav-link").hover(
+        function () {
+            $(this).stop().animate({
+                marginTop: "-5px"
+            }, 200).css("color","#ff4da6");
+        },
+        function () {
+            $(this).stop().animate({
+                marginTop: "0px"
+            }, 200).css("color","grey");;
+        }
+    );
+
+function HoverCards() {
+    document.querySelectorAll(".card-productos").forEach(function(card) {
+
+    card.addEventListener("mouseenter", function() {
+        this.style.transform = "translateY(-10px)";
+        this.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.16)";
+    });
+
+    card.addEventListener("mouseleave", function() {
+        this.style.transform = "translateY(0)";
+        this.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.08)";
+    });
+
+});
 }

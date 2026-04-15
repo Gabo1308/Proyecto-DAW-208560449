@@ -4,18 +4,15 @@ let marcadorUTN;
 let servicioRutas;
 let renderRutas;
 
-// Coordenadas pasteleria
 const pasteleria = { lat: 9.985468, lng: -84.132507 };
 
 function inicializarMapa() {
     try {
-        // Crear mapa
         mapa = new google.maps.Map(document.getElementById("mapa"), {
             center: pasteleria,
             zoom: 14
         });
 
-        // Marcador pasteleria
         marcadorUTN = new google.maps.Marker({
             position: pasteleria,
             map: mapa,
@@ -23,7 +20,6 @@ function inicializarMapa() {
             title: "pasteleria"
         });
 
-        // Servicio de rutas
         servicioRutas = new google.maps.DirectionsService();
         renderRutas = new google.maps.DirectionsRenderer({
             suppressMarkers: false
@@ -36,11 +32,9 @@ function inicializarMapa() {
     }
 }
 
-// Esperar a que cargue el DOM completo por si acaso.
 $(document).ready(function () {
 
     $("#btnUbicacion").click(function () {
-        //Limpiamos todos los mensajes.
         $("#mensajeError").text("");
         $("#distanciaInfo").text("");
         $("#rutaInfo").text("");
@@ -73,25 +67,20 @@ function mostrarPosicion(position) {
             lng: position.coords.longitude
         };
 
-        // Centrar mapa en usuario
         mapa.setCenter(usuario);
 
-        // Eliminar marcador anterior si existe
         if (marcadorUsuario) {
             marcadorUsuario.setMap(null);
         }
 
-        // Crear marcador del usuario
         marcadorUsuario = new google.maps.Marker({
             position: usuario,
             map: mapa,
             title: "Tu ubicación"
         });
 
-        // Distancia en línea recta (geométrica)
         calcularDistanciaLineaRecta(usuario);
 
-        // Trazar ruta y calcular distancia real
         trazarRuta(usuario);
 
     } catch (error) {
@@ -101,7 +90,6 @@ function mostrarPosicion(position) {
 }
 
 
-// Manejo de errores de geolocalización atrapamos errores para demostrar. 
 function manejarError(error) {
 
     let mensaje = "";
@@ -154,7 +142,6 @@ function trazarRuta(usuario) {
 
                     renderRutas.setDirections(resultado);
 
-                    // Datos reales de la ruta. 
                     const ruta = resultado.routes[0].legs[0];
 
                     const distanciaReal = ruta.distance.text;
@@ -182,4 +169,40 @@ function trazarRuta(usuario) {
         console.error("Error al trazar la ruta:", error);
         $("#mensajeError").text("No se pudo iniciar el cálculo de la ruta.");
     }
+}
+
+//Da efecto hover
+
+$(".nav-link").hover(
+        function () {
+            $(this).stop().animate({
+                marginTop: "-5px"
+            }, 200).css("color","#ff4da6");
+        },
+        function () {
+            $(this).stop().animate({
+                marginTop: "0px"
+            }, 200).css("color","grey");;
+        }
+    );
+
+
+//SIN JQuery
+
+//Cambia de color el boton
+
+ColorBoton();
+
+function ColorBoton() {
+    const boton = document.getElementById("btnUbicacion");
+
+    boton.addEventListener("mouseenter", function() {
+        this.style.backgroundColor = "#ff4da6";
+        this.style.color = "white";
+    });
+
+    boton.addEventListener("mouseleave", function() {
+        this.style.backgroundColor = "";
+        this.style.color = "";
+    });
 }
