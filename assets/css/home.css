@@ -225,11 +225,6 @@ main .servicios-section .servicios-contenedor .servicios-contenido
   font-size: 20px;
 }
 
-main .section-mapa {
-  margin-left: 90px;
-  margin-right: 90px;
-}
-
 main .section-mapa .contenedor-mapa {
   background-color: #FEC3E1;
   border-radius: 25px;
