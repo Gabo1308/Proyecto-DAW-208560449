@@ -16,7 +16,7 @@ body {
   padding-bottom: 2px;
 }
 
-.estrella1 {
+.header-home .estrella1 {
   position: absolute;
   color: #b6b5b5;
   font-size: 20px;
@@ -24,7 +24,7 @@ body {
   left: 10px;
 }
 
-.estrella2 {
+.header-home .estrella2 {
   position: absolute;
   color: #b6b5b5;
   font-size: 20px;
@@ -112,6 +112,7 @@ main .sobreNosotros-section {
 main .sobreNosotros-section .sobreNosotros-contenedor {
   background-color: #f1f0f0;
   border: 15px solid #FEC3E1;
+  border-radius: 25px;
 }
 
 main .sobreNosotros-section .sobreNosotros-contenedor h2 {
@@ -130,6 +131,7 @@ main .sobreNosotros-section .sobreNosotros-contenedor .sobreNosotros-contenido i
   margin: 0px auto;
   border: 3px solid #f178d7;
   padding: 20px;
+  border-radius: 25px;
 }
 
 main .sobreNosotros-section .sobreNosotros-contenedor .sobreNosotros-contenido 
@@ -139,6 +141,7 @@ main .sobreNosotros-section .sobreNosotros-contenedor .sobreNosotros-contenido
   margin-top: 15px;
   font-size: 18px;
   margin: 20px;
+  
 }
 
 main .sobreNosotros-section .sobreNosotros-contenedor .sobreNosotros-contenido 
@@ -146,6 +149,7 @@ main .sobreNosotros-section .sobreNosotros-contenedor .sobreNosotros-contenido
   background-color: white;
   border: 3px solid #f178d7;
   padding: 20px;
+  border-radius: 25px;
 }
 
 main .sobreNosotros-section .sobreNosotros-contenedor .sobreNosotros-contenido 
@@ -171,6 +175,7 @@ main .servicios-section{
 main .servicios-section .servicios-contenedor {
   background-color: #f1f0f0;
   border: 15px solid #FEC3E1;
+  border-radius: 25px;
 }
 
 main .servicios-section .servicios-contenedor h2 {
@@ -189,10 +194,10 @@ main .servicios-section .servicios-contenedor .servicios-descripcion {
   text-align: center;
   color: #cf7192;
   border: 3px solid #f178d7;
-  margin: 20px;
   font-size: 18px;
   border-radius: 25px;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 main .servicios-section .servicios-contenedor .servicios-contenido 
@@ -220,11 +225,32 @@ main .servicios-section .servicios-contenedor .servicios-contenido
   font-size: 20px;
 }
 
-main .contenedor-mapa {
+main .section-mapa {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+main .section-mapa .contenedor-mapa {
   background-color: #FEC3E1;
-  color: #f5f5f5;
   border-radius: 25px;
   padding: 5px;
+}
+
+main .section-mapa .contenedor-mapa .contenido-mapa {
+  background-color: #f5f5f5;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+main .section-mapa .contenedor-mapa .contenido-mapa h3 {
+  text-align: center;
+  color: #cf7192;
+  border: 3px solid #f178d7;
+  border-radius: 25px;
+  margin-top: 15px;
 }
 
 main .contenido-negocio .descripcion-negocio h3{
@@ -238,14 +264,44 @@ main .contenido-negocio .descripcion-negocio p{
   font-size: 15px;
 }
 
-main #mapa { 
+main .section-mapa .contenedor-mapa .contenido-mapa .fila-mapa 
+.boton-mapa {
+  text-align: center;
+}
+
+main .section-mapa .contenedor-mapa .contenido-mapa .fila-mapa 
+.boton-mapa #btnUbicacion {
+  color: #d17a98;
+  border: 3px solid #f178d7;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+main .section-mapa .contenedor-mapa .contenido-mapa .fila-mapa 
+.boton-mapa .mensaje-error {
+  color: red;
+  margin-top: 5px;
+}
+
+main .section-mapa .contenedor-mapa .contenido-mapa .fila-mapa .mapa-home #mapa { 
   overflow: hidden;
+  border: 3px solid #f178d7;
   width: 100%;
   height: 260px;
 }
 
-main #btnUbicacion {
-  color: #d17a98;
+main .section-mapa .contenedor-mapa .contenido-mapa .mapa-info {
+  background-color: #FEC3E1;
+  color: grey;
+  border: 3px solid gray;
+  border-radius: 25px;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+main .section-mapa .contenedor-mapa .contenido-mapa .mapa-info p{
+  margin-top: 5px;
+  margin-left: 15px;
 }
 
 .footer-home {
@@ -280,24 +336,24 @@ main #btnUbicacion {
 
 @media (min-width: 768px){
 
-  .estrella1,
-  .estrella2{
+  .header-home {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .header-home .estrella1,
+  .header-home .estrella2 {
     font-size: 28px;
   }
 
-  .nav-negocio .bi-cake{
-    font-size: 28px;
-  }
-
-  .section-nav .nav-contenedor .nav-home{
+  .section-nav .nav-contenedor .nav-home {
     margin: 20px auto;
     width: 90%;
     font-size: 19px;
   }
 
-  .header-home{
-    width: 90%;
-    margin-top: 20px;
+  .section-nav .nav-contenedor .nav-home .bi-cake {
+    font-size: 28px;
   }
 
   .section-caroucel {
@@ -339,10 +395,18 @@ main #btnUbicacion {
   main .contenedor-mapa {
     margin: 70px;
   }
-  
-   main #mapa {
-    width: 100%;
-    height: 500px;
+
+  main .section-mapa .contenedor-mapa .contenido-mapa 
+  .fila-mapa .mapa-home #mapa {
+    margin: 20px auto;
+    width: 50%;
+    height: 400px !important;
+  }
+
+  main .section-mapa .contenedor-mapa .contenido-mapa .mapa-info {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px; 
   }
 
   .footer-home .contenido-footer {

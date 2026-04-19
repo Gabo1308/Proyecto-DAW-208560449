@@ -16,7 +16,7 @@ body {
   padding-bottom: 2px;
 }
 
-.estrella1 {
+.header-acerca .estrella1 {
   position: absolute;
   color: #b6b5b5;
   font-size: 20px;
@@ -24,7 +24,7 @@ body {
   left: 10px;
 }
 
-.estrella2 {
+.header-acerca .estrella2 {
   position: absolute;
   color: #b6b5b5;
   font-size: 20px;
@@ -58,16 +58,53 @@ main .contenido-negocio {
 }
 
 main .contenido-negocio .descripcion-negocio {
-  background-color: #F5F5F5;
+  background-color: white;
   color: #d17a98;
   border-radius: 25px;
-  padding: 5px;
+  padding: 15px;
 }
 
-main .contenido-negocio .descripcion-negocio h3{
+main .contenido-negocio .descripcion-negocio .selector-info {
+  border: 3px solid #d17a98;
+  color: #b34269;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+main .contenido-negocio .descripcion-negocio .informacion-negocio {
+  color: #d17a98;
+}
+
+main .contenido-negocio .descripcion-negocio .informacion-negocio h3{
   text-align: center;
   font-size: 18px;
   margin-top: 15px;
+}
+
+main .contenido-negocio .descripcion-negocio .higiene-negocio {
+  width: 100%;
+  padding: 10px;
+}
+
+main .contenido-negocio .descripcion-negocio .higiene-negocio h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+main .contenido-negocio .descripcion-negocio .informacion-negocio {
+  border: 3px solid #d17a98;
+  border-radius: 25px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+main .contenido-negocio .descripcion-negocio .informacion-negocio p {
+  margin: 5px;
+}
+
+main .contenido-negocio .descripcion-negocio .higiene-negocio .video-higiene {
+  width: 100%;
 }
 
 main .contenido-negocio .descripcion-negocio p{
@@ -104,15 +141,15 @@ main .contenido-negocio .descripcion-negocio p{
   margin-right: 5px;
 }
 
-
 @media (min-width: 768px){
 
-  .estrella1,
-  .estrella2{
-    font-size: 28px;
+  .header-acerca{
+    width: 90%;
+    margin-top: 20px;
   }
-
-  .section-nav .nav-contenedor .nav-acerca .bi-cake{
+  
+  .header-acerca .estrella1,
+  .header-acerca .estrella2 {
     font-size: 28px;
   }
 
@@ -122,18 +159,36 @@ main .contenido-negocio .descripcion-negocio p{
     font-size: 19px;
   }
 
-  .header-acerca{
-    width: 90%;
-    margin-top: 20px;
+  .section-nav .nav-contenedor .nav-acerca .bi-cake{
+    font-size: 28px;
   }
 
-  main .contenido-negocio .descripcion-negocio h3{
+  main .contenido-negocio .descripcion-negocio .informacion-negocio {
+    margin-bottom: 15px;
+  }
+
+  main .contenido-negocio .descripcion-negocio .informacion-negocio h3{
     font-size: 25px;
- }
+  }
 
   main .contenido-negocio .descripcion-negocio p{
     text-align: justify;
     font-size: 20px;
+  }
+
+  main .contenido-negocio .descripcion-negocio .higiene-negocio {
+    margin: 0 auto;
+    max-width: 700px; 
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  main .contenido-negocio .descripcion-negocio .higiene-negocio h3{
+    font-size: 25px; 
+  }
+
+  main .contenido-negocio .descripcion-negocio .higiene-negocio .video-higiene {
+    height: 394px;
   }
 
   .footer-acerca .contenido-footer {

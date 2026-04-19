@@ -41,9 +41,15 @@
         <section class="section-galeria">
             <div class="productos-galeria">
                 <div class="encabezado-productos">
+                    <h2 class="titulo-productos">Nuestros Productos</h2>
+
+                    <p class="indicador-selector"> Seleccione su moneda: </p>  
+
+                    <select id="tipoCambio" onchange="callTipoCambio(2,this.value)" 
+                    class="selector-moneda"> </select>
+
                     <div class="contenido-productos container">    
-                        <div class="row g-3 fila" id="contenedor-productos">
-                        </div>
+                        <div class="row g-3 fila" id="contenedor-productos"></div>
                     </div>
                 </div>
             </div>
@@ -51,7 +57,77 @@
 
         <section class="section-formulario">
             <div class="formulario-productos">
+                <div class="contenido-formulario">
+                    <h2>Haz tu Pedido</h2>
+                    <form class="row g-3 formulario-inicio">
+                        <div class="parte-formulario">
+                            <p>Nombre Completo</p>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        
+                        <div class="parte-formulario">
+                            <p>Correo Electrónico</p>
+                            <input type="email" id="correo" class="form-control" required>
+                        </div>
 
+                        <div class="parte-formulario">
+                            <p>Teléfono</p>
+                            <input type="text" id="telefono" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Fecha de Entrega</p>
+                            <input type="date" id="fechaEnt" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Hora de Entrega</p>
+                            <input type="time" id="horaEnt" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Seleccione un postre</p>
+                            <select id="seleccion-postre" onchange="actualizarResumen()" class="form-control" required>
+                                <option value="">Seleccione una opción</option>
+                            </select>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Cantidad</p>
+                            <input type="number" id="cantidad" oninput="actualizarResumen()" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Detalles adicionales</p>
+                            <input type="text" id="detalle" class="form-control">
+                        </div>
+
+                        <div class="resumen-formulario">
+                            <div class="cuadro-resumen">
+                                <h4>Resumen del pedido</h4>
+                                <div id="resumenOrden">
+                                    <p>No hay productos agregados a la orden.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <button type="button" id="btnAgregar" onclick="agregarOrden()"
+                            class="btn boton-formulario">Agregar a la orden</button>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <button type="button" id="btnFactura" onclick="generarFactura()"
+                             class="btn boton-formulario">Generar Factura</button>
+                        </div>
+                        
+                        <div class="parte-whatsapp">
+                            <button type="button" id="btnWhatsapp"onclick="enviarWhatsapp()"
+                             class="btn boton-formulario">Ordenar por WhatsApp</button>
+                        </div>   
+                    </form>
+                    <div id="contenedorFactura"></div>
+                </div>
             </div>
         </section>
     </main>

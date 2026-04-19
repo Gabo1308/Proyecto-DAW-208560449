@@ -42,28 +42,48 @@
     <main>
         <div class="contenido-negocio container">
             <div class="descripcion-negocio">
-                <h3>Sobre el negocio</h3>
+                <select onchange="SobreElSitio(this.options[this.selectedIndex].value)" class="form-select selector-info" id="sobre">
+                    <option selected="selected" value="Negocio">
+                        Acerca del Negocio
+                    </option>
+                    <option value="Mi">Acerca de Mi</option>
+                </select>
 
-                <p> La idea de este negocio no nació de un momento específico, sino de algo que 
-                    ha estado conmigo desde siempre. Desde pequeña me ha gustado mucho la 
-                    pastelería y la cocina, pero no solo por hacer comida, sino por lo que 
-                    significa: crear, compartir y hacer felices a otras personas con algo hecho 
-                    con mis propias manos.</p>
-                
-                <p> Uno de los recuerdos más bonitos que tengo es hacer pasteles con mi abuelita.
-                    No eran solo recetas, eran momentos. Entre risas, errores y olores dulces en
-                    la cocina, fui descubriendo lo mucho que me llenaba todo eso. Creo que ahí 
-                    fue cuando, sin darme cuenta, empezó a formarse este sueño.</p>
-                
-                <p> Con el tiempo, esa ilusión fue tomando forma, y comencé a imaginarme teniendo 
-                    mi propio café o pastelería. Un lugar acogedor, donde cada detalle tenga 
-                    intención, donde las personas no solo vayan a comer, sino a sentirse bien, 
-                    como yo me sentía en esos momentos con mi abuela.</p>
+                <div id="contenidoSobre" class="informacion-negocio">
+                    <h3 id="titulo-negocio" class="">Acerca del negocio</h3>
 
-                <p>Hoy en día, tal vez aún no estoy completamente ahí, pero siento que este 
-                    proyecto es un paso importante. Es una oportunidad para acercarme a ese 
-                    sueño, para aprender, crecer y seguir construyendo algo que nace desde lo 
-                    más sincero de mí.</p>
+                    <p id="texto-negocio" class="">La idea de este negocio no nació de un momento 
+                        específico, sino de algo que ha estado conmigo desde siempre. Desde pequeña 
+                        me ha gustado mucho la pastelería y la cocina, pero no solo por hacer comida,
+                        sino por lo que significa: crear, compartir y hacer felices a otras personas
+                        con algo hecho con mis propias manos. <br> <br>
+
+                        Uno de los recuerdos más bonitos que tengo es hacer pasteles con mi abuelita. 
+                        No eran solo recetas, eran momentos. Entre risas, errores y olores dulces en la 
+                        cocina, fui descubriendo lo mucho que me llenaba todo eso. Creo que ahí fue 
+                        cuando, sin darme cuenta, empezó a formarse este sueño. <br> <br>
+
+                        Con el tiempo, esa ilusión fue tomando forma, y comencé a imaginarme teniendo mi
+                        propio café o pastelería. Un lugar acogedor, donde cada detalle tenga intención,
+                        donde las personas no solo vayan a comer, sino a sentirse bien, como yo me sentía
+                        en esos momentos con mi abuela. <br> <br>
+
+                        Hoy en día, tal vez aún no estoy completamente ahí, pero siento que este 
+                        proyecto es un paso importante. Es una oportunidad para acercarme a ese 
+                        sueño, para aprender, crecer y seguir construyendo algo que nace desde lo 
+                        más sincero de mí.</p>
+
+
+                    <h3 id="titulo-mi" class="d-none">Acerca de Mi</h3>
+                    
+                    <p id="texto-mi" class="d-none">Contenido de la opción Mi.</p>
+                </div>
+
+                <div class="higiene-negocio">
+                    <h3>Medidas de Higiene que Usamos</h3>
+                    <iframe src="https://www.youtube.com/embed/r6X_hVwVVEg" frameborder="0" 
+                    class="video-higiene"></iframe>
+                </div>
             </div>
         </div>   
     </main>

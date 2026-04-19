@@ -24,11 +24,14 @@ function mostrarRedes(datos) {
     datos.FotosPerfil.forEach(function(redSoc) {
         codigo += `
             <div class="col-12 col-md-4 card-redes text-center">
-                <i class="bi ${redSoc.icono} icono-insta"></i><br>
-                <a href="${redSoc.link}" target="_blank">
+                <a href="${redSoc.link}"> 
+                <i class="bi ${redSoc.icono} icono-insta"></i> 
+                </a> <br>
+
+                <a href="${redSoc.link}">
                     <img src="${redSoc.imagen}" class="img-fluid" alt="imagen red"><br>
                 </a>
-                <a href="${redSoc.link}" target="_blank">${redSoc.usuario}</a>
+                <a href="${redSoc.link}">${redSoc.usuario}</a>
             </div>
         `;
     });
@@ -45,6 +48,19 @@ $(".nav-link").hover(
         function () {
             $(this).stop().animate({
                 marginTop: "0px"
-            }, 200).css("color","grey");;
+            }, 200).css("color","grey");
+        }
+    );
+
+$(".card-redes").hover(
+        function () {
+            $(this).stop().animate({
+                marginTop: "-5px"
+            }, 200)
+        },
+        function () {
+            $(this).stop().animate({
+                marginTop: "0px"
+            }, 200)
         }
     );

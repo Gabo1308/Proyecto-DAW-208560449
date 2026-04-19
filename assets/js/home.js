@@ -1,6 +1,6 @@
 let mapa;
 let marcadorUsuario;
-let marcadorUTN;
+let marcadorPasteleria;
 let servicioRutas;
 let renderRutas;
 
@@ -13,7 +13,7 @@ function inicializarMapa() {
             zoom: 14
         });
 
-        marcadorUTN = new google.maps.Marker({
+        marcadorPasteleria = new google.maps.Marker({
             position: pasteleria,
             map: mapa,
             icon: "https://maps.google.com/mapfiles/ms/icons/flag.png",
@@ -58,6 +58,7 @@ $(document).ready(function () {
         }
     });
 
+    ColorBoton();
 });
 
 function mostrarPosicion(position) {
@@ -171,8 +172,6 @@ function trazarRuta(usuario) {
     }
 }
 
-//Da efecto hover
-
 $(".nav-link").hover(
         function () {
             $(this).stop().animate({
@@ -185,13 +184,6 @@ $(".nav-link").hover(
             }, 200).css("color","grey");;
         }
     );
-
-
-//SIN JQuery
-
-//Cambia de color el boton
-
-ColorBoton();
 
 function ColorBoton() {
     const boton = document.getElementById("btnUbicacion");
@@ -206,3 +198,4 @@ function ColorBoton() {
         this.style.color = "";
     });
 }
+

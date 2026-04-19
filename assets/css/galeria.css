@@ -16,7 +16,7 @@ body {
   padding-bottom: 2px;
 }
 
-.estrella1 {
+.header-galeria .estrella1 {
   position: absolute;
   color: #b6b5b5;
   font-size: 28px;
@@ -24,7 +24,7 @@ body {
   left: 10px;
 }
 
-.estrella2 {
+.header-galeria .estrella2 {
   position: absolute;
   color: #b6b5b5;
   font-size: 28px;
@@ -49,13 +49,56 @@ body {
   margin-left: 8px;
 }
 
-main .productos-galeria {
- background-color: #FEC3E1;
- border-radius: 25px;
- margin: 25px;
+main .section-galeria .productos-galeria {
+  background-color: #FEC3E1;
+  border-radius: 25px;
+  margin: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-main .productos-galeria .encabezado-productos 
+main .section-galeria .productos-galeria .encabezado-productos {
+  background-color: white;
+  text-align: center;
+  border-radius: 25px;
+  margin: 20px;
+  padding-top: 15px;
+}
+
+main .section-galeria .productos-galeria .encabezado-productos .titulo-productos {
+  display: block;
+  background-color: white;
+  width: fit-content;
+  color: #f178d7;
+  border: 3px solid #f178d7;
+  margin: 20px auto;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+main .section-galeria .productos-galeria .encabezado-productos .indicador-selector {
+  background-color: white;
+  color: #c748ab;
+  width: fit-content;
+  border: 3px solid #f178d7;
+  margin: 15px auto;
+  padding: 5px 20px;
+  border-radius: 25px;
+}
+
+main .section-galeria .productos-galeria .encabezado-productos .selector-moneda {
+  background-color: white;   
+  color: #cf5bb6;        
+  border: 3px solid #f178d7;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+main .section-galeria .productos-galeria .encabezado-productos .selector-moneda:hover {
+  transform: translateY(-5px);
+}
+
+main .section-galeria .productos-galeria .encabezado-productos 
 .contenido-productos {
   padding: 15px;
 }
@@ -63,9 +106,9 @@ main .productos-galeria .encabezado-productos
 main .section-galeria .productos-galeria .encabezado-productos 
 .contenido-productos .fila .card-productos {
   background-color: white;
-  border: 1px solid #e5e5e5;
   overflow: hidden;
   text-align: center;
+  border: 5px solid #f178d7;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border-radius: 12px;
   width: 100%;
@@ -102,10 +145,86 @@ main .section-galeria .productos-galeria .encabezado-productos
   font-size: 22px;
 }
 
+main .section-formulario {
+  padding: 10px;
+  margin: 15px
+}
+
+main .section-formulario .formulario-productos {
+  background-color: #FEC3E1;
+  margin: 0 auto;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario {
+  background-color: white;
+  color: #831a6c;
+  border-radius: 25px;
+  margin: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario h2 {
+  text-align: center;
+  border: 3px solid #d17a98;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio {
+  margin: 25px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+.parte-formulario input, #seleccion-postre {
+ color: #831a6c;
+ border: 3px solid #d17a98;
+ height: 30px;
+ padding: 3px 9px;
+ font-size: 15px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+.resumen-formulario {
+  border: 3px solid #d17a98;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario
+.tabla-factura {
+  color: #831a6c;
+  border: 3px solid #d17a98;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+button {
+ color: #831a6c;
+ border: 3px solid #d17a98;
+ border-radius: 25px;
+ font-size: 15px;
+ margin: 10px;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+#btnFactura {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+
+}
+
 .footer-galeria {
   color: #d17a98;
   border: 3px solid #d17a98;
   padding: 25px 15px;
+  margin-top: 10px;
 }
 
 .footer-galeria .contenido-footer {
@@ -133,24 +252,24 @@ main .section-galeria .productos-galeria .encabezado-productos
 
 @media (min-width: 768px){
 
-  .estrella1,
-  .estrella2 {
-    font-size: 28px;
+  .header-galeria{
+    width: 90%;
+    margin-top: 20px;
   }
 
-  .nav-negocio .bi-cake {
+  .header-galeria .estrella1,
+  .header-galeria .estrella2 {
     font-size: 28px;
   }
-
+  
   .section-nav .nav-contenedor .nav-galeria {
     width: 90%;
     margin: 20px auto;
     font-size: 19px;
   }
-
-  .header-galeria{
-    width: 90%;
-    margin-top: 20px;
+  
+  .nav-negocio .bi-cake {
+    font-size: 28px;
   }
 
   main .section-galeria .productos-galeria .encabezado-productos 
@@ -168,6 +287,37 @@ main .section-galeria .productos-galeria .encabezado-productos
   main .section-galeria .productos-galeria .encabezado-productos 
   .contenido-productos .fila .card-productos .info-producto h3 {
     font-size: 22px !important;
+  }
+
+  main .section-formulario .formulario-productos .contenido-formulario 
+  .formulario-inicio {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  main .section-formulario .formulario-productos .contenido-formulario 
+  .formulario-inicio .resumen-formulario{
+    display: flex;
+  }
+
+  main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+  #btnAgregar {
+    display: block;
+    margin: 10px auto;
+    padding: 22px;
+  }
+
+  main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+  #btnFactura {
+    padding: 22px 38px;
+    margin-top: 15px
+  }
+
+  main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+  #btnWhatsapp {
+    display: block;
+    margin: 15px auto;
+    padding: 22px 15px;
   }
 
   .footer-galeria .contenido-footer {

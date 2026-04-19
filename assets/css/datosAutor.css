@@ -15,7 +15,7 @@ body {
   padding-bottom: 2px;
 }
 
-.estrella1 {
+.header-autor .estrella1 {
   position: absolute;
   color: #b6b5b5;
   font-size: 28px;
@@ -23,7 +23,7 @@ body {
   left: 10px;
 }
 
-.estrella2 {
+.header-autor .estrella2 {
   position: absolute;
   color: #b6b5b5;
   font-size: 28px;
@@ -57,15 +57,26 @@ body {
 
 main .datos-autor {
   background: #FEC3E1;
-  color: grey;
   border-radius: 25px;
   margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
-main .datos-autor img {
-  height: auto;
-  width: 100%;
+main .datos-autor .contenido-autor {
+  background-color: white;
+  color: #d17a98;
+  padding-top: 5px;
+  padding-bottom: 15px;
   border-radius: 25px;
+}
+
+main .datos-autor .contenido-autor img {
+  display: block;
+  height: auto;
+  margin: 0 auto; 
+  border-radius: 25px;
+  width: 90%;
 }
 
 .footer-autor {
@@ -98,18 +109,15 @@ main .datos-autor img {
 }
 
 @media (min-width: 768px){
-  .estrella1,
-  .estrella2{
-    font-size: 28px;
+  
+  .header-autor {
+    width: 90%;
+    margin-top: 20px;
   }
 
-  .bi-cake{
+  .header-autor .estrella1,
+  .header-autor .estrella2{
     font-size: 28px;
-  }
-
-  main .datos-autor img {
-    width: 500px;
-    height: 500px;
   }
 
   .section-nav .nav-contenedor .nav-autor .bi-cake {
@@ -122,11 +130,15 @@ main .datos-autor img {
     font-size: 19px;
   }
 
-  .header-autor {
-    width: 90%;
-    margin-top: 20px;
+  main .datos-autor .contenido-autor { 
+    margin: 30px;
   }
-
+  
+  main .datos-autor .contenido-autor img {
+    width: 500px;
+    height: 500px;
+  }
+  
   .footer-autor .contenido-footer {
     display: grid;
     justify-content: space-between;
