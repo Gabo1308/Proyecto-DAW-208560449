@@ -213,11 +213,23 @@ button {
 }
 
 main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+#btnAgregar {
+  display: block;
+  margin: 10px auto;
+}
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
 #btnFactura {
   display: block;
   margin: 0 auto;
   padding: 10px;
 
+}
+
+main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
+#btnAgregar {
+  display: block;
+  margin: 10px auto;
 }
 
 .footer-galeria {
@@ -302,8 +314,6 @@ main .section-formulario .formulario-productos .contenido-formulario .formulario
 
   main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
   #btnAgregar {
-    display: block;
-    margin: 10px auto;
     padding: 22px;
   }
 
@@ -315,8 +325,6 @@ main .section-formulario .formulario-productos .contenido-formulario .formulario
 
   main .section-formulario .formulario-productos .contenido-formulario .formulario-inicio
   #btnWhatsapp {
-    display: block;
-    margin: 15px auto;
     padding: 22px 15px;
   }
 
