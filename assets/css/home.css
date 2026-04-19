@@ -304,6 +304,7 @@ main .section-mapa .contenedor-mapa .contenido-mapa .mapa-info p{
   color: #d17a98;
   border: 3px solid #d17a98;
   padding: 25px 15px;
+  margin-top: 15px;
 }
 
 .footer-home .contenido-footer {
