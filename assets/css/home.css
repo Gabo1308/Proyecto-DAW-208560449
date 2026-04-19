@@ -295,6 +295,7 @@ main .section-mapa .contenedor-mapa .contenido-mapa .mapa-info {
 }
 
 main .section-mapa .contenedor-mapa .contenido-mapa .mapa-info p{
+  text-align: center;
   margin-top: 5px;
   margin-left: 15px;
 }
