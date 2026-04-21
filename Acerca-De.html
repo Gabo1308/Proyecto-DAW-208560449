@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto-208560449-home</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/Acerca-De.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header class="container-fluid header-acerca">
+        <i class="bi bi-stars estrella1"></i>
+        <h1 class="text-center">Primavera's Cakes</h1>
+        <h4 class="text-center">Todo en Postres<br>
+                                Acerca de</h4>
+        <i class="bi bi-star estrella2"></i>
+    </header>
+
+    <section class="section-nav">
+        <div class="container-fluid nav-contenedor">
+            <nav class="navbar navbar-expand-lg navbar-light nav-acerca">
+                <a class="bi bi-cake" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <div class="navbar-nav nav-links">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="galeria.html">Productos</a>
+                        <a class="nav-link" href="contacto.html">Información de contacto</a>
+                        <a class="nav-link" href="Acerca-De.html">Acerca de</a>
+                        <a class="nav-link" href="datosAutor.html">Sobre el Estudiante</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <main>
+        <div class="contenido-negocio container">
+            <div class="descripcion-negocio">
+                <select onchange="SobreElSitio(this.options[this.selectedIndex].value)" class="form-select selector-info" id="sobre">
+                    <option selected="selected" value="Negocio">
+                        Acerca del Negocio
+                    </option>
+                    <option value="Mi">Acerca de Mi</option>
+                </select>
+
+                <div id="contenidoSobre" class="informacion-negocio">
+                    <h3 id="titulo-negocio" class="">Acerca del negocio</h3>
+
+                    <p id="texto-negocio" class="">La idea de este negocio no nació de un momento 
+                        específico, sino de algo que ha estado conmigo desde siempre. Desde pequeña 
+                        me ha gustado mucho la pastelería y la cocina, pero no solo por hacer comida,
+                        sino por lo que significa: crear, compartir y hacer felices a otras personas
+                        con algo hecho con mis propias manos. <br> <br>
+
+                        Uno de los recuerdos más bonitos que tengo es hacer pasteles con mi abuelita. 
+                        No eran solo recetas, eran momentos. Entre risas, errores y olores dulces en la 
+                        cocina, fui descubriendo lo mucho que me llenaba todo eso. Creo que ahí fue 
+                        cuando, sin darme cuenta, empezó a formarse este sueño. <br> <br>
+
+                        Con el tiempo, esa ilusión fue tomando forma, y comencé a imaginarme teniendo mi
+                        propio café o pastelería. Un lugar acogedor, donde cada detalle tenga intención,
+                        donde las personas no solo vayan a comer, sino a sentirse bien, como yo me sentía
+                        en esos momentos con mi abuela. <br> <br>
+
+                        Hoy en día, tal vez aún no estoy completamente ahí, pero siento que este 
+                        proyecto es un paso importante. Es una oportunidad para acercarme a ese 
+                        sueño, para aprender, crecer y seguir construyendo algo que nace desde lo 
+                        más sincero de mí.</p>
+
+
+                    <h3 id="titulo-mi" class="d-none">Acerca de Mi</h3>
+                    
+                    <p id="texto-mi" class="d-none">Buenos días, mi nombre es Amanda. Bueno, me gusta cocinar, me gusta hacer postres.
+                        Es para eso que comence ese pequeño entendimiento que se llama Primavera's Cakes, es porque este pequeño me gusta mucho 
+                        lo que es cocinar, principalmente hacer pasteles y postres, bueno, repostería dulce. <br><br>
+                        
+                        También me gusta mucho los animales y ese tipo de cosas como salir de aventura, pasa tiempo con mis amigos, me agrada mucho y 
+                        dedicarme a las cosas que me apasionan como mis estudios, ir la playa, a la montaña, también me encanta, o por ejemplo 
+                        también pasar tiempo en algo más relajado, como ver series, películas, o pues pasara tiempo de calidad con las personas que 
+                        yo quiero.</p>
+                </div>
+
+                <div class="higiene-negocio">
+                    <h3>Medidas de Higiene que Usamos</h3>
+                    <iframe src="https://www.youtube.com/embed/r6X_hVwVVEg" frameborder="0" 
+                    class="video-higiene"></iframe>
+                </div>
+            </div>
+        </div>   
+    </main>
+
+    <footer class="footer-acerca">
+        <div class="encabezado-footer">
+            <div class="contenido-footer">
+                <div class="footer-datos">
+                    <h3>Redes Sociales</h3>
+                    <a href="https://www.instagram.com/moon_ie26/"> <i class="bi bi-instagram"> moon_ie26 </i></a>
+                    <a href="https://x.com/ami97051793"> <i class="bi bi-twitter"> @ami97051793 </i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100046433016745&locale=es_LA"> <i class="bi bi-facebook"> Amanda Gómez </i></a>
+                    <a href="https://wa.me/50684499445"><i class="bi bi-whatsapp"></i> Amanda Gómez Chaves</a>
+                </div>
+                <div class="footer-datos">
+                    <h3>Contactenos</h3>
+                    <p>Dirección: Salon Comunal Urb. Monte Rosa</p>
+                    <p>Correo Electrónico: <a href="mailto:amandagchak@gmail.com">amandagchak@gmail.com</a></p>
+                    <p>Teléfono: 84499445</p>
+                </div>
+                <div class="footer-datos">
+                    <h3>Contenido Relevante</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="galeria.html">Productos</a>
+                    <a href="datosAutor.html">Sobre el Autor</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="Acerca-De.html">Acerca de</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/Acerca-De.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto-208560449-Galeria</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/galeria.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container-fluid header-galeria">
+        <i class="bi bi-stars estrella1"></i>
+        <h1 class="text-center">Primavera's Cakes</h1>
+        <h4 class="text-center">Todo en Postres <br>
+                                Productos</h4>
+        <i class="bi bi-star estrella2"></i>
+    </header>
+    <section class="section-nav">
+        <div class="container-fluid nav-contenedor">
+            <nav class="navbar navbar-expand-lg navbar-light nav-galeria">
+                <a class="bi bi-cake" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <div class="navbar-nav nav-links">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="galeria.html">Productos</a>
+                        <a class="nav-link" href="contacto.html">Información de contacto</a>
+                        <a class="nav-link" href="Acerca-De.html">Acerca de</a>
+                        <a class="nav-link" href="datosAutor.html">Sobre el Estudiante</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <main>
+        <section class="section-galeria">
+            <div class="productos-galeria">
+                <div class="encabezado-productos">
+                    <h2 class="titulo-productos">Nuestros Productos</h2>
+
+                    <p class="indicador-selector"> Seleccione su moneda: </p>  
+
+                    <select id="tipoCambio" onchange="callTipoCambio(2,this.value)" 
+                    class="selector-moneda"> </select>
+
+                    <div class="contenido-productos container">    
+                        <div class="row g-3 fila" id="contenedor-productos"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-formulario">
+            <div class="formulario-productos">
+                <div class="contenido-formulario">
+                    <h2>Haz tu Pedido</h2>
+                    <form class="row g-3 formulario-inicio">
+                        <div class="parte-formulario">
+                            <p>Nombre Completo</p>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        
+                        <div class="parte-formulario">
+                            <p>Correo Electrónico</p>
+                            <input type="email" id="correo" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Teléfono</p>
+                            <input type="text" id="telefono" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Fecha de Entrega</p>
+                            <input type="date" id="fechaEnt" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Hora de Entrega</p>
+                            <input type="time" id="horaEnt" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Seleccione un postre</p>
+                            <select id="seleccion-postre" onchange="actualizarResumen()" class="form-control" required>
+                                <option value="">Seleccione una opción</option>
+                            </select>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Cantidad</p>
+                            <input type="number" id="cantidad" oninput="actualizarResumen()" class="form-control" required>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <p>Detalles adicionales</p>
+                            <input type="text" id="detalle" class="form-control">
+                        </div>
+
+                        <div class="resumen-formulario">
+                            <div class="cuadro-resumen">
+                                <h4>Resumen del pedido</h4>
+                                <div id="resumenOrden">
+                                    <p>No hay productos agregados a la orden.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <button type="button" id="btnAgregar" onclick="agregarOrden()"
+                            class="btn boton-formulario">Agregar a la orden</button>
+                        </div>
+
+                        <div class="parte-formulario">
+                            <button type="button" id="btnFactura" onclick="generarFactura()"
+                             class="btn boton-formulario">Generar Factura</button>
+                        </div>
+                        
+                        <div class="parte-whatsapp">
+                            <button type="button" id="btnWhatsapp"onclick="enviarWhatsapp()"
+                             class="btn boton-formulario">Ordenar por WhatsApp</button>
+                        </div>   
+                    </form>
+                    <div id="contenedorFactura"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-galeria">
+        <div class="encabezado-footer">
+            <div class="contenido-footer">
+                <div class="footer-datos">
+                    <h3>Redes Sociales</h3>
+                    <a href="https://www.instagram.com/moon_ie26/"> <i class="bi bi-instagram"> moon_ie26 </i></a>
+                    <a href="https://x.com/ami97051793"> <i class="bi bi-twitter"> @ami97051793 </i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100046433016745&locale=es_LA"> <i class="bi bi-facebook"> Amanda Gómez </i></a>
+                    <a href="https://wa.me/50684499445"><i class="bi bi-whatsapp"></i> Amanda Gómez Chaves</a>
+                </div>
+                <div class="footer-datos">
+                    <h3>Contactenos</h3>
+                    <p>Dirección: Salon Comunal Urb. Monte Rosa</p>
+                    <p>Correo Electrónico: <a href="mailto:amandagchak@gmail.com">amandagchak@gmail.com</a></p>
+                    <p>Teléfono: 84499445</p>
+                </div>
+                <div class="footer-datos">
+                    <h3>Contenido Relevante</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="galeria.html">Productos</a>
+                    <a href="datosAutor.html">Sobre el Autor</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="Acerca-De.html">Acerca de</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/galeria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
