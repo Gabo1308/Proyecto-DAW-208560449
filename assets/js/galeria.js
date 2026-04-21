@@ -1,4 +1,4 @@
-let imgsURL ="https://Gabo1308.github.io/Proyecto-DAW-208560449/assets/json/imgs.json"
+let imgsURL ="https://Gabo1308.github.io/imgsProyecto/imgs.json"
 let productosFormulario = [];
 let ordenPedido = [];
 
