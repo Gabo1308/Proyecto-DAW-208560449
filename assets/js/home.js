@@ -3,7 +3,6 @@ let marcadorUsuario;
 let marcadorPasteleria;
 let servicioRutas;
 let renderRutas;
-
 const pasteleria = { lat: 9.985468, lng: -84.132507 };
 
 function inicializarMapa() {
