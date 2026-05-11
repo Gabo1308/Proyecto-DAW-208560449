@@ -101,31 +101,36 @@
                             <input type="text" id="detalle" class="form-control">
                         </div>
 
-                        <div class="resumen-formulario">
-                            <div class="cuadro-resumen">
-                                <h4>Resumen del pedido</h4>
-                                <div id="resumenOrden">
-                                    <p>No hay productos agregados a la orden.</p>
-                                </div>
+                    </form>
+
+                    <div class="resumen-formulario">
+                        <div class="cuadro-resumen">
+                            <h4>Resumen del pedido</h4>
+                            <div id="resumenOrden">
+                                <p>No hay productos agregados a la orden.</p>
                             </div>
                         </div>
+                    </div>
+                    
+                    <div id="contenedorFactura"></div>
 
-                        <div class="parte-formulario">
+                    <div class="seccion-botones">
+                        <div class="botones-formulario">
                             <button type="button" id="btnAgregar" onclick="agregarOrden()"
                             class="btn boton-formulario">Agregar a la orden</button>
                         </div>
 
-                        <div class="parte-formulario">
+                        <div class="botones-formulario">
                             <button type="button" id="btnFactura" onclick="generarFactura()"
-                             class="btn boton-formulario">Generar Factura</button>
+                            class="btn boton-formulario">Generar una Factura</button>
                         </div>
                         
-                        <div class="parte-whatsapp">
+                        <div class="botones-formulario">
                             <button type="button" id="btnWhatsapp"onclick="enviarWhatsapp()"
-                             class="btn boton-formulario">Ordenar por WhatsApp</button>
-                        </div>   
-                    </form>
-                    <div id="contenedorFactura"></div>
+                            class="btn boton-formulario">Ordenar por WhatsApp</button>
+                        </div> 
+                    </div>  
+                    
                 </div>
             </div>
         </section>

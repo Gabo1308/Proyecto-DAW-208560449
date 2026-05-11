@@ -104,10 +104,6 @@ main .contenido-negocio .descripcion-negocio .informacion-negocio p {
   margin: 5px;
 }
 
-main .contenido-negocio .descripcion-negocio .higiene-negocio .video-higiene {
-  width: 100%;
-}
-
 main .contenido-negocio .descripcion-negocio p{
   text-align: justify;
   font-size: 15px;
@@ -175,21 +171,6 @@ main .contenido-negocio .descripcion-negocio p{
   main .contenido-negocio .descripcion-negocio p{
     text-align: justify;
     font-size: 20px;
-  }
-
-  main .contenido-negocio .descripcion-negocio .higiene-negocio {
-    margin: 0 auto;
-    max-width: 700px; 
-    padding: 20px;
-    margin-top: 15px;
-  }
-
-  main .contenido-negocio .descripcion-negocio .higiene-negocio h3{
-    font-size: 25px; 
-  }
-
-  main .contenido-negocio .descripcion-negocio .higiene-negocio .video-higiene {
-    height: 394px;
   }
 
   .footer-acerca .contenido-footer {

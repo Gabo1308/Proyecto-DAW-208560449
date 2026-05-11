@@ -463,12 +463,6 @@ function generarFactura() {
                     </tr>
                 </tbody>
             </table>
-            
-            <br> <br>
-            <audio controls>
-            <source src="assets/audio/Agradecimiento.mp3" type= audio/mpeg>
-                gracias por su compra.
-            </audio> 
         </div>
         `;
 
